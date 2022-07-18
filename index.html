@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <title> Aula 1 </title>
+        <link rel="icon" type="image"
+        
+        <meta charset="utf-8">
+
+    </head>
+
+    <body bgcolor="white" background="" text="black" link="green" alink="red" vlink="orange"> 
+        <!-- bgcolor(Cor do plano de fundo da página) background(Define o fundo da página como uma imagem)
+        text(altera a cor dos textos de uma imagem) link(nunca foi aberto) alink(pressionado) vlink(link já aberto)-->
+
+        <a name="topo"></a>
+
+        <h2> Exemplo 1 - Hyperlink</h2> <!-- h(Tag de cabeçalho-->
+
+        <a href="https://www.google.com" target="_blank" title="Site do Google"> 
+            Clique aqui
+
+        </a> 
+        <!-- a(âncora)A tag de hyperlink não funciona de forma solitária. href(hyperlink reference)-->
+
+        <hr color="gray" size="6" width="960"/>
+
+        <br />
+        <br />
+        
+        <h2 > Exemplo 2 - Imagens </h2> 
+
+        <p align="center">
+        <img src="img/download.jfif" width="480" height="180" alt="Dono da realidade"/> 
+        </p>
+        
+        <!-- Tag img(imagem) com atributo src(source)
+        alt(atributo obrigatório)
+        border (acrescenta uma borda preta na imagem)-->
+        
+        <br /> 
+        <!-- Abre uma nova guia ao pressionar uma nova imagem-->
+        
+        <p align="left">
+        <a href="img/paisagem.jpg" target="_blank" title="Sapo esperto">
+
+            <img src="img/download.jfif" width="100" height="50" alt="Mais sapo">
+
+        </a>
+        </p>
+
+        <br />
+        <br />
+        
+
+        <hr color="gray" size="6" width="360"/>  <!-- Linha divisória-->
+
+        <br />
+
+        <figure> 
+
+            <p align="center"> <img src="img/gênio.jpg" width="320" height="280" alt="Só livro de doido" /> </p>
+            <figcaption> Capa do mais famoso romance de Machado de Assis, Memórias  </figcaption>
+
+        </figure>
+
+
+        <hr color="gray" size="6" width="360"/>
+
+        <br />
+        <br />  
+
+        <p align="center"> <picture > 
+
+            <source media="(min-widht:800px)" srcset="img/foto1000.jpg">
+            <source media="(min-width:550px)" srcset="img/foto800.png">
+            <img src="img/foto400.png" width="400" height="220" alt="Imagem muito grande." />
+
+        </picture> </p>
+
+        <br />
+        <br />
+
+        <hr color="gray" size="6" width="960" />
+
+        <h2 style="color:black;"> Exemplo 3 - Parágrafos </h2>        
+
+        <p align="center"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+            Rem sapiente nostrum exercitationem eius, error, assumenda illo deleniti suscipit possimus 
+            ratione dignissimos, 
+            aliquid explicabo obcaecati officiis vitae? Recusandae corporis iusto vel.</p>
+
+        <p align="center"> Texto centralizado </p>
+        <p align="left"> Texto alinhado à esquerda </p>
+        <p align="right"> Texto alinhado à direita </p>
+        <p align="justify"> Texto justificado </p>
+        
+        
+        <h3 align="center"> Informações super importantes!</h3>
+        <details align="center">
+            <summary> Leia mais...</summary>
+            <p> Mob é muito bom, ta doido... </p>
+            <img src="img/mob.gif" width="300" height="200" alt="Tá bravo.">
+
+        </details>
+
+        <br />
+        <br />
+
+        <hr color="gray" size="6" width="960" />
+
+        <h2> Exemplo 4 - Formatação de texto </h2>
+
+        <p align="center"> 
+        <font color="lightgray" size="12" face="arial, times new roman, calibri"> Texto formatado </font>
+        </p>
+
+        <p align="center">
+        <strong> Texto Negrito </strong>
+        <br />
+        <em> Texto Itálico </em>
+        <br />
+        <u> Texto Sublinhado</u>
+        <br /> 
+        <s> Texto Tachado </s>
+        </p>
+       
+        <p align="center"> 
+
+            <font color="black">
+                <strong> <em> <u><s>
+                    Texto cor cinza,  negrito, itálico, sublinhado, e tachado.
+                </s></u></em></strong>
+            </font>
+
+        </p>
+
+        <br />
+        <br />
+
+        <hr color="gray" size="6" width="960" />
+
+
+        <h2 style="color:black;"> Exemplo 5 - Áudio e vídeos</h2>
+        
+
+        <!-- loop(reinicia a música)
+        autoplay (não operante) muted(inicia a música mutado)
+        Exercem as mesmas propriedades nos vídeos-->
+
+
+        <p align="center"> 
+        <audio controls loop> 
+            <source src="audio/m1.mp3" type="audio/mp3">
+        </audio>
+         </p>
+
+        <p align="center"> 
+        <video controls width="500" height="400" loop>
+            <source src="video/v1.mp4" type="video/mp4">
+        </video>
+        </p>
+       
+        <br />
+        <br />
+
+        <hr color="gray" size="6" width="960" />
+       
+        <h2 style="color:black;"> Exemplo 6 - Back to top</h2>
+
+        
+        <p align="center">
+            <a href="#topo"> VOLTAR AO TOPO </a>
+        </p>
+
+        <h3><em> Exemplo Extra - Transição simples </em></h3>
+
+        <marquee> pato </marquee>
+        <br />
+        <marquee behavior="scroll" direction="up" height="300"> pato</marquee>
+        <br />
+        <marquee behavior="scroll" direction="right" height="200" scrollamount="50"> pato </marquee>
+
+        <!-- Também é possível acrescentar tags de imagem no marquee(Transições no código   )-->
+
+    </body>
+
+</html>
